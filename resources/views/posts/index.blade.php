@@ -15,7 +15,7 @@
        <span class="badge badge-info bg-dark">Created</span> : {{ $post->created_at->diffForHumans() }}
        <span class="badge badge-info bg-dark">Updated</span> : {{ $post->updated_at->diffForHumans() }}
     </p>
-    <a href="#" class="card-link">Card link</a>
+    <a href="{{ route('posts.edit', ['post' => $post->id]) }}" class="btn btn-info me-3">edit</a>
     <a href="#" class="card-link">Another link</a>
   </div>
 </div>
